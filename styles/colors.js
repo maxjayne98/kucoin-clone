@@ -73,4 +73,6 @@ module.exports = {
   /*, Teal */
   'teal-100': '#01e675',
   'teal-200': '#103928',
+
+  'black': '#00142a'
 };
