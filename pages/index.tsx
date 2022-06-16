@@ -17,8 +17,8 @@ const Home: NextPage = () => {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
           <Button>Sign up</Button>
-          <Button variant="outline-primary">Sign up</Button>
-          <Button variant="gray-200">Sign up</Button>
+          <Button variant="OUTLINE">Sign up</Button>
+          <Button variant="SECONDARY">Sign up</Button>
         </h1>
 
         <p className={styles.description}>
