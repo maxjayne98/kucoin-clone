@@ -48,11 +48,11 @@ module.exports = {
   'bluish-green-300': '#49b95c',
 
   /*, Cyan */
-  'cya,-100': '#128c7e',
+  'cyan-100': '#128c7e',
   'cyan-200': '#075e54',
 
   /*, Red */
-  're,-100': '#fdeeed',
+  'red-100': '#fdeeed',
   'red-200': '#f26a5f',
   /* Blu violet */
   'blue-violet-100': '#d9dfea',
@@ -62,7 +62,7 @@ module.exports = {
   'blue-violet-500': '#0e1f5b',
 
   /*, Blue */
-  'blu,-100': '#606770',
+  'blue-100': '#606770',
   'blue-200': '#4b5462',
   'blue-300': '#273443',
 
@@ -71,6 +71,6 @@ module.exports = {
   'khaki-200': '#fcf2c6',
 
   /*, Teal */
-  'tea,-100': '#01e675',
+  'teal-100': '#01e675',
   'teal-200': '#103928',
 };
