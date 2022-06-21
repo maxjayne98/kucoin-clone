@@ -21,7 +21,7 @@ const Button = ({
   const variantStyle = variants[variant] || '';
 
   const cn = classnames(
-    'inline-flex p-2 text-sm text-center hover:opacity-60',
+    'inline-flex items-center p-2 text-sm text-center hover:opacity-60',
     variantStyle,
     className
   );

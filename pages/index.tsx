@@ -1,7 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Image from 'next/image';
 
 import { Button, ExpandableButton } from '../components/Shared/Button';
+import { DotsVerticalIcon, GlobeIcon } from '../components/Shared/Svg/Icons';
 
 const Home: NextPage = () => {
   return (
@@ -12,16 +14,42 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
-        <Button className="mr-1">Sign up</Button>
-        <Button className="mr-1" variant="OUTLINE">
-          Log In
-        </Button>
-        <Button className="mr-1" variant="SECONDARY">
-          USD
-        </Button>
-        <ExpandableButton>Derivatives</ExpandableButton>
-      </div>
+      <nav className="flex items-center p-7">
+        <div className="flex items-center">
+          <Button variant="TEXT">
+            <Image
+              src="https://assets.staticimg.com/cms/media/1lB3PkckFDyfxz6VudCEACBeRRBi6sQQ7DDjz0yWM.svg"
+              alt="logo"
+              width={120}
+              height={32}
+            />
+          </Button>
+          <ExpandableButton>
+            <DotsVerticalIcon />
+          </ExpandableButton>
+          <ExpandableButton>Buy Crypto</ExpandableButton>
+          <ExpandableButton>Markets</ExpandableButton>
+          <ExpandableButton>Trade</ExpandableButton>
+          <ExpandableButton>Derivatives</ExpandableButton>
+          <ExpandableButton>Earn</ExpandableButton>
+          <ExpandableButton>NFT</ExpandableButton>
+        </div>
+
+        <div className="flex ml-auto">
+          <div className="mr-4">
+            <Button className="mr-1" variant="OUTLINE">
+              Log In
+            </Button>
+            <Button className="mr-1">Sign up</Button>
+          </div>
+          <Button className="mr-1" variant="SECONDARY">
+            <GlobeIcon />
+          </Button>
+          <Button className="mr-1" variant="SECONDARY">
+            USD
+          </Button>
+        </div>
+      </nav>
     </div>
   );
 };
