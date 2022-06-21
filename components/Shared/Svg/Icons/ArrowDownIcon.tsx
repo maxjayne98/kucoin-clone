@@ -2,8 +2,8 @@ import classNames from 'classnames';
 
 import { Props } from './types';
 
-const ArrowDown = ({ className }: Props) => {
-  const cn = classNames('h-3 w-3 ml-1', className);
+const ArrowDownIcon = ({ className }: Props) => {
+  const cn = classNames('h-3 w-3', className);
 
   return (
     <svg
@@ -19,4 +19,4 @@ const ArrowDown = ({ className }: Props) => {
   );
 };
 
-export default ArrowDown;
+export default ArrowDownIcon;

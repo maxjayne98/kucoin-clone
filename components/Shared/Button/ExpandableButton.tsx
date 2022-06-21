@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 import { Props } from './types';
 
-import ArrowDown from '../Svg/Icons/ArrowDown';
+import ArrowDownIcon from '../Svg/Icons/ArrowDownIcon';
 
 const ExpandableButton = ({ children, className, ...rest }: Props) => {
   const buttonCn = classNames(
@@ -10,12 +10,12 @@ const ExpandableButton = ({ children, className, ...rest }: Props) => {
     className
   );
 
-  const arrowCn = classNames('group-hover:rotate-180');
+  const arrowCn = classNames('group-hover:rotate-180 ml-1');
 
   return (
     <button className={buttonCn} {...rest}>
       {children}
-      <ArrowDown className={arrowCn} />
+      <ArrowDownIcon className={arrowCn} />
     </button>
   );
 };
