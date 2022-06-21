@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import { Props } from './types';
 
 const GlobeIcon = ({ className }: Props) => {
-  const cn = classNames('h-3 w-3', className);
+  const cn = classNames('h-5 w-5', className);
 
   return (
     <svg
