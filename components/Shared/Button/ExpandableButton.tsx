@@ -2,7 +2,7 @@ import classNames from 'classnames';
 
 import { Props } from './types';
 
-import ArrowDownIcon from '../Svg/Icons/ArrowDownIcon';
+import { ArrowDownIcon } from '../Svg/Icons';
 
 const ExpandableButton = ({ children, className, ...rest }: Props) => {
   const buttonCn = classNames(
