@@ -17,7 +17,7 @@ const Button = ({
   const variantStyle = variants[variant] || '';
 
   const cn = classnames(
-    'py-2 px-1.5 rounded text-center hover:opacity-60 text-sm',
+    'p-2 text-sm rounded text-center hover:opacity-60',
     variantStyle,
     className
   );
