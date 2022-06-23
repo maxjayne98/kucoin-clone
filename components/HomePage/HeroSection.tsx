@@ -11,13 +11,13 @@ const HeroSection = () => {
     >
       <div className="flex flex-col md:flex-row justify-between max-w-7xl w-full">
         <div className="flex flex-col items-start h-full">
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-xl md:text-4xl font-semibold">
             Find the Next Crypto Gem on KuCoin
           </h1>
-          <h6 className="text-lg font-light">
+          <h6 className="md:text-lg font-light mt-2">
             1 Out of 4 Crypto Holders Worldwide Is with KuCoin
           </h6>
-          <Button className="mt-12 px-10 text-lg" variant="PRIMARY">
+          <Button className="mt-10 md:px-10 md:text-lg" variant="PRIMARY">
             Sign Up
           </Button>
           <span className="mt-2 text-sm font-light">
@@ -25,7 +25,7 @@ const HeroSection = () => {
           </span>
         </div>
 
-        <div className="flex flex-col justify-center items-start h-full mt-10 md:mt-0">
+        <div className="flex flex-col justify-center items-center h-full mt-10 md:mt-0">
           <div
             className="h-80 w-80 bg-cover bg-no-repeat pb-12 flex flex-col items-center justify-end"
             style={{
