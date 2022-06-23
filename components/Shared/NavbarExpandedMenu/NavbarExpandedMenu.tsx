@@ -1,5 +1,5 @@
-import { ExpandableButton } from '../Shared/Button';
-import { DotsVerticalIcon } from '../Shared/Svg/Icons';
+import { ExpandableButton } from '../Button';
+import { DotsVerticalIcon } from '../Svg/Icons';
 
 const NavbarExpandedMenu = () => {
   return (
