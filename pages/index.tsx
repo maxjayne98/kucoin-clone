@@ -1,11 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import { Button } from '../components/Shared/Button';
-import { GlobeIcon } from '../components/Shared/Svg/Icons';
-import { Logo } from '../components/Shared/Logo';
-
-import { NavbarExpandedMenu } from '../components/NavbarExpandedMenu';
+import { HeroSection, HomePageNavbar } from '../components';
 
 const Home: NextPage = () => {
   return (
@@ -16,29 +12,9 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <nav className="flex items-center p-7">
-        <div className="flex items-center">
-          <Button variant="TEXT">
-            <Logo />
-          </Button>
-          <NavbarExpandedMenu />
-        </div>
+      <HomePageNavbar />
 
-        <div className="flex ml-auto">
-          <div className="mr-4">
-            <Button className="mr-1" variant="OUTLINE">
-              Log In
-            </Button>
-            <Button className="mr-1">Sign up</Button>
-          </div>
-          <Button className="mr-1" variant="SECONDARY">
-            <GlobeIcon />
-          </Button>
-          <Button className="mr-1" variant="SECONDARY">
-            USD
-          </Button>
-        </div>
-      </nav>
+      <HeroSection />
     </div>
   );
 };
