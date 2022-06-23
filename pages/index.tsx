@@ -1,9 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 
-import { Button, ExpandableButton } from '../components/Shared/Button';
-import { DotsVerticalIcon, GlobeIcon } from '../components/Shared/Svg/Icons';
+import { Button } from '../components/Shared/Button';
+import { GlobeIcon } from '../components/Shared/Svg/Icons';
+import { Logo } from '../components/Shared/Logo';
+
+import { NavbarExpandedMenu } from '../components/NavbarExpandedMenu';
 
 const Home: NextPage = () => {
   return (
@@ -17,22 +19,9 @@ const Home: NextPage = () => {
       <nav className="flex items-center p-7">
         <div className="flex items-center">
           <Button variant="TEXT">
-            <Image
-              src="https://assets.staticimg.com/cms/media/1lB3PkckFDyfxz6VudCEACBeRRBi6sQQ7DDjz0yWM.svg"
-              alt="logo"
-              width={120}
-              height={32}
-            />
+            <Logo />
           </Button>
-          <ExpandableButton>
-            <DotsVerticalIcon />
-          </ExpandableButton>
-          <ExpandableButton>Buy Crypto</ExpandableButton>
-          <ExpandableButton>Markets</ExpandableButton>
-          <ExpandableButton>Trade</ExpandableButton>
-          <ExpandableButton>Derivatives</ExpandableButton>
-          <ExpandableButton>Earn</ExpandableButton>
-          <ExpandableButton>NFT</ExpandableButton>
+          <NavbarExpandedMenu />
         </div>
 
         <div className="flex ml-auto">
